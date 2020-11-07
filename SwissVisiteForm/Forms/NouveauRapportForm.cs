@@ -104,7 +104,6 @@ namespace SwissVisite.Forms
 
             GlobalConfig.Connexion.RapportVisite_Save(rapport);
 
-            // TODO - Ouvrir le formulaire RapportsForm avec le rapport nouvellement créé
             DemandeFermetureNouveauRapportForm_Event?.Invoke(rapport.Numero);
         }
 
