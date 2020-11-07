@@ -106,7 +106,8 @@ L'application peut fonctionner indifféremment **avec SQL Server ou MySQL / Mari
 Vous n'avez **pas besoin de modifier le code source** de l'application puis de recompiler celle-ci pour définir parmi ces possibilités celle qui vous convient.  
 
 Il vous suffit simplement d'ouvrir avec un éditeur de texte le **fichier de configuration `app.config` du projet `SwissVisiteForm`** (et non pas celui de `SwissVisiteLibrary` !),    
-puis de **modifier les valeurs associées aux clés `sourceDonnees` et `proceduresStockees` de la section `appSettings`** :   
+puis de **modifier les valeurs associées aux clés `sourceDonnees` et `proceduresStockees` de la section `appSettings`** : 
+  
 | Clé                | Valeurs possibles |
 |--------------------|-------------------|
 | proceduresStockees | oui / non         |
