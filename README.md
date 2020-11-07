@@ -169,8 +169,8 @@ L'affichage des **formulaires enfants** depuis le formulaire parent se fait comm
 + Menu principal
   + **Comptes-rendus** : formulaire de consultation des comptes-rendus existants du visiteur authentifié
     + **Nouveau compte-rendu** : formulaire de saisie d'un nouveau compte-rendu de visite (accessible depuis le bouton `Nouveau`)
-      + **Praticiens** : choix du praticien à l'aide de l'annuaire (acessible depuis le bouton-icône `Fiche`)(formulaire modal : s'affiche par-dessus le formulaire `Nouveau compte-rendu`)
-    + **Praticien** : fiche du praticien concerné par la visite (acessible depuis le bouton-icône `Fiche`)(formulaire modal : s'affiche par-dessus le formulaire `Comptes-rendus`)
+      + **Praticiens** : choix du praticien à l'aide de l'annuaire (accessible depuis le bouton-icône `Fiche`)(formulaire modal : s'affiche par-dessus le formulaire `Nouveau compte-rendu`)
+    + **Praticien** : fiche du praticien concerné par la visite (accessible depuis le bouton-icône `Fiche`)(formulaire modal : s'affiche par-dessus le formulaire `Comptes-rendus`)
   + **Médicaments** : formulaire listant les médicaments GSB
   + **Praticiens** : annuaire des praticiens
   + **Visiteurs** : annuaire des visiteurs médicaux
