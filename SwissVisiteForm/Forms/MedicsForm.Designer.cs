@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicsForm));
             this.selecMedicPanel = new System.Windows.Forms.Panel();
             this.medicSuivBtn = new FontAwesome.Sharp.IconButton();
             this.medicSelecComboBox = new System.Windows.Forms.ComboBox();
@@ -112,9 +113,9 @@
             this.medicSelecComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.medicSelecComboBox.ForeColor = System.Drawing.Color.Black;
             this.medicSelecComboBox.FormattingEnabled = true;
-            this.medicSelecComboBox.Location = new System.Drawing.Point(0, 28);
+            this.medicSelecComboBox.Location = new System.Drawing.Point(0, 26);
             this.medicSelecComboBox.Name = "medicSelecComboBox";
-            this.medicSelecComboBox.Size = new System.Drawing.Size(273, 31);
+            this.medicSelecComboBox.Size = new System.Drawing.Size(273, 29);
             this.medicSelecComboBox.TabIndex = 3;
             this.monToolTip.SetToolTip(this.medicSelecComboBox, "Sélectionner un médicament.");
             this.medicSelecComboBox.SelectionChangeCommitted += new System.EventHandler(this.medicSelecComboBox_SelectionChangeCommitted);
@@ -153,7 +154,7 @@
             this.medicSelecLabel.Location = new System.Drawing.Point(0, 0);
             this.medicSelecLabel.Name = "medicSelecLabel";
             this.medicSelecLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.medicSelecLabel.Size = new System.Drawing.Size(244, 28);
+            this.medicSelecLabel.Size = new System.Drawing.Size(198, 26);
             this.medicSelecLabel.TabIndex = 2;
             this.medicSelecLabel.Text = "Trouver un médicament";
             // 
@@ -179,9 +180,9 @@
             this.familleSelecComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.familleSelecComboBox.ForeColor = System.Drawing.Color.Black;
             this.familleSelecComboBox.FormattingEnabled = true;
-            this.familleSelecComboBox.Location = new System.Drawing.Point(0, 92);
+            this.familleSelecComboBox.Location = new System.Drawing.Point(0, 86);
             this.familleSelecComboBox.Name = "familleSelecComboBox";
-            this.familleSelecComboBox.Size = new System.Drawing.Size(273, 31);
+            this.familleSelecComboBox.Size = new System.Drawing.Size(273, 29);
             this.familleSelecComboBox.TabIndex = 21;
             this.monToolTip.SetToolTip(this.familleSelecComboBox, "Sélectionner une famille de médicaments.");
             this.familleSelecComboBox.Visible = false;
@@ -193,10 +194,10 @@
             this.triParFamilleRadioBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.triParFamilleRadioBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.triParFamilleRadioBtn.ForeColor = System.Drawing.Color.Black;
-            this.triParFamilleRadioBtn.Location = new System.Drawing.Point(0, 60);
+            this.triParFamilleRadioBtn.Location = new System.Drawing.Point(0, 56);
             this.triParFamilleRadioBtn.Name = "triParFamilleRadioBtn";
             this.triParFamilleRadioBtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 5);
-            this.triParFamilleRadioBtn.Size = new System.Drawing.Size(273, 32);
+            this.triParFamilleRadioBtn.Size = new System.Drawing.Size(273, 30);
             this.triParFamilleRadioBtn.TabIndex = 19;
             this.triParFamilleRadioBtn.Text = "Une seule famille";
             this.triParFamilleRadioBtn.UseVisualStyleBackColor = true;
@@ -208,10 +209,10 @@
             this.triTousRadioBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.triTousRadioBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.triTousRadioBtn.ForeColor = System.Drawing.Color.Black;
-            this.triTousRadioBtn.Location = new System.Drawing.Point(0, 28);
+            this.triTousRadioBtn.Location = new System.Drawing.Point(0, 26);
             this.triTousRadioBtn.Name = "triTousRadioBtn";
             this.triTousRadioBtn.Padding = new System.Windows.Forms.Padding(5, 0, 0, 5);
-            this.triTousRadioBtn.Size = new System.Drawing.Size(273, 32);
+            this.triTousRadioBtn.Size = new System.Drawing.Size(273, 30);
             this.triTousRadioBtn.TabIndex = 18;
             this.triTousRadioBtn.TabStop = true;
             this.triTousRadioBtn.Text = "Tous, de A à Z";
@@ -224,7 +225,7 @@
             this.optionTriLabel.Location = new System.Drawing.Point(0, 0);
             this.optionTriLabel.Name = "optionTriLabel";
             this.optionTriLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.optionTriLabel.Size = new System.Drawing.Size(287, 28);
+            this.optionTriLabel.Size = new System.Drawing.Size(231, 26);
             this.optionTriLabel.TabIndex = 20;
             this.optionTriLabel.Text = "Affichage des médicaments";
             // 
@@ -234,12 +235,12 @@
             this.contreIndicVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contreIndicVal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contreIndicVal.ForeColor = System.Drawing.Color.Black;
-            this.contreIndicVal.Location = new System.Drawing.Point(282, 483);
+            this.contreIndicVal.Location = new System.Drawing.Point(226, 483);
             this.contreIndicVal.Multiline = true;
             this.contreIndicVal.Name = "contreIndicVal";
             this.contreIndicVal.ReadOnly = true;
             this.infoMedicPanel.SetRowSpan(this.contreIndicVal, 3);
-            this.contreIndicVal.Size = new System.Drawing.Size(363, 144);
+            this.contreIndicVal.Size = new System.Drawing.Size(419, 144);
             this.contreIndicVal.TabIndex = 16;
             this.contreIndicVal.TabStop = false;
             this.contreIndicVal.Text = "{ContreIndications}";
@@ -250,12 +251,12 @@
             this.effetsVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.effetsVal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.effetsVal.ForeColor = System.Drawing.Color.Black;
-            this.effetsVal.Location = new System.Drawing.Point(282, 333);
+            this.effetsVal.Location = new System.Drawing.Point(226, 333);
             this.effetsVal.Multiline = true;
             this.effetsVal.Name = "effetsVal";
             this.effetsVal.ReadOnly = true;
             this.infoMedicPanel.SetRowSpan(this.effetsVal, 3);
-            this.effetsVal.Size = new System.Drawing.Size(363, 144);
+            this.effetsVal.Size = new System.Drawing.Size(419, 144);
             this.effetsVal.TabIndex = 15;
             this.effetsVal.TabStop = false;
             this.effetsVal.Text = "{Effets}";
@@ -266,9 +267,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.codeVal.AutoSize = true;
             this.codeVal.ForeColor = System.Drawing.Color.Black;
-            this.codeVal.Location = new System.Drawing.Point(282, 30);
+            this.codeVal.Location = new System.Drawing.Point(226, 30);
             this.codeVal.Name = "codeVal";
-            this.codeVal.Size = new System.Drawing.Size(96, 50);
+            this.codeVal.Size = new System.Drawing.Size(74, 50);
             this.codeVal.TabIndex = 14;
             this.codeVal.Text = "{Code}";
             // 
@@ -279,9 +280,9 @@
             this.nomCommVal.AutoSize = true;
             this.nomCommVal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomCommVal.ForeColor = System.Drawing.Color.Black;
-            this.nomCommVal.Location = new System.Drawing.Point(282, 80);
+            this.nomCommVal.Location = new System.Drawing.Point(226, 80);
             this.nomCommVal.Name = "nomCommVal";
-            this.nomCommVal.Size = new System.Drawing.Size(233, 50);
+            this.nomCommVal.Size = new System.Drawing.Size(184, 50);
             this.nomCommVal.TabIndex = 13;
             this.nomCommVal.Text = "{Nom commercial}";
             // 
@@ -293,7 +294,7 @@
             this.familleLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.familleLabel.Location = new System.Drawing.Point(23, 130);
             this.familleLabel.Name = "familleLabel";
-            this.familleLabel.Size = new System.Drawing.Size(99, 50);
+            this.familleLabel.Size = new System.Drawing.Size(70, 50);
             this.familleLabel.TabIndex = 6;
             this.familleLabel.Text = "Famille";
             // 
@@ -305,7 +306,7 @@
             this.contreIndicLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.contreIndicLabel.Location = new System.Drawing.Point(23, 480);
             this.contreIndicLabel.Name = "contreIndicLabel";
-            this.contreIndicLabel.Size = new System.Drawing.Size(233, 50);
+            this.contreIndicLabel.Size = new System.Drawing.Size(177, 50);
             this.contreIndicLabel.TabIndex = 4;
             this.contreIndicLabel.Text = "Contre-indications";
             // 
@@ -317,7 +318,7 @@
             this.effetsLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.effetsLabel.Location = new System.Drawing.Point(23, 330);
             this.effetsLabel.Name = "effetsLabel";
-            this.effetsLabel.Size = new System.Drawing.Size(76, 50);
+            this.effetsLabel.Size = new System.Drawing.Size(58, 50);
             this.effetsLabel.TabIndex = 3;
             this.effetsLabel.Text = "Effets";
             // 
@@ -329,7 +330,7 @@
             this.composLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.composLabel.Location = new System.Drawing.Point(23, 230);
             this.composLabel.Name = "composLabel";
-            this.composLabel.Size = new System.Drawing.Size(166, 50);
+            this.composLabel.Size = new System.Drawing.Size(123, 50);
             this.composLabel.TabIndex = 2;
             this.composLabel.Text = "Composition";
             // 
@@ -352,7 +353,7 @@
             this.codeLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.codeLabel.Location = new System.Drawing.Point(23, 30);
             this.codeLabel.Name = "codeLabel";
-            this.codeLabel.Size = new System.Drawing.Size(81, 50);
+            this.codeLabel.Size = new System.Drawing.Size(62, 50);
             this.codeLabel.TabIndex = 0;
             this.codeLabel.Text = "Code";
             // 
@@ -362,12 +363,12 @@
             this.familleVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.familleVal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.familleVal.ForeColor = System.Drawing.Color.Black;
-            this.familleVal.Location = new System.Drawing.Point(282, 133);
+            this.familleVal.Location = new System.Drawing.Point(226, 133);
             this.familleVal.Multiline = true;
             this.familleVal.Name = "familleVal";
             this.familleVal.ReadOnly = true;
             this.infoMedicPanel.SetRowSpan(this.familleVal, 2);
-            this.familleVal.Size = new System.Drawing.Size(363, 94);
+            this.familleVal.Size = new System.Drawing.Size(419, 94);
             this.familleVal.TabIndex = 23;
             this.familleVal.TabStop = false;
             this.familleVal.Text = "{Famille}";
@@ -378,12 +379,12 @@
             this.composVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.composVal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.composVal.ForeColor = System.Drawing.Color.Black;
-            this.composVal.Location = new System.Drawing.Point(282, 233);
+            this.composVal.Location = new System.Drawing.Point(226, 233);
             this.composVal.Multiline = true;
             this.composVal.Name = "composVal";
             this.composVal.ReadOnly = true;
             this.infoMedicPanel.SetRowSpan(this.composVal, 2);
-            this.composVal.Size = new System.Drawing.Size(363, 94);
+            this.composVal.Size = new System.Drawing.Size(419, 94);
             this.composVal.TabIndex = 24;
             this.composVal.TabStop = false;
             this.composVal.Text = "{Composition}";
@@ -437,9 +438,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.prixEchantVal.AutoSize = true;
             this.prixEchantVal.ForeColor = System.Drawing.Color.Black;
-            this.prixEchantVal.Location = new System.Drawing.Point(282, 630);
+            this.prixEchantVal.Location = new System.Drawing.Point(226, 630);
             this.prixEchantVal.Name = "prixEchantVal";
-            this.prixEchantVal.Size = new System.Drawing.Size(209, 50);
+            this.prixEchantVal.Size = new System.Drawing.Size(157, 50);
             this.prixEchantVal.TabIndex = 11;
             this.prixEchantVal.Text = "{Prix échantillon}";
             // 
@@ -451,7 +452,7 @@
             this.prixEchantLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.prixEchantLabel.Location = new System.Drawing.Point(23, 630);
             this.prixEchantLabel.Name = "prixEchantLabel";
-            this.prixEchantLabel.Size = new System.Drawing.Size(194, 50);
+            this.prixEchantLabel.Size = new System.Drawing.Size(145, 50);
             this.prixEchantLabel.TabIndex = 5;
             this.prixEchantLabel.Text = "Prix échantillon";
             // 
@@ -484,16 +485,17 @@
             // 
             // MedicsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(962, 717);
             this.Controls.Add(this.mainContainer);
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "MedicsForm";
-            this.Text = "MedicsForm";
+            this.Text = "GSB SwissVisite - Médicaments";
             this.selecMedicPanel.ResumeLayout(false);
             this.selecMedicPanel.PerformLayout();
             this.optionTriPanel.ResumeLayout(false);

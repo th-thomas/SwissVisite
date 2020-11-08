@@ -26,10 +26,13 @@ namespace SwissVisite.Forms
         }
 
         private void TextBox_TextChanged(object sender, EventArgs e)
-        {
-            connexionBtn.Enabled = !string.IsNullOrWhiteSpace(identifiantVal.Text) && !string.IsNullOrWhiteSpace(motDePasseVal.Text);
+        {         
+            connexionBtn.Enabled = !string.IsNullOrEmpty(identifiantVal.Text) && !string.IsNullOrEmpty(motDePasseVal.Text);
             erreurTextBox.Visible = false;
-            erreurTextBox.Text = string.Empty;
+            erreurTextBox.Text = "";
+
+            identifiantValEffaceBtn.Enabled = identifiantValEffaceBtn.Visible = !string.IsNullOrEmpty(identifiantVal.Text);
+            motDePasseValEffaceBtn.Enabled = motDePasseValEffaceBtn.Visible = !string.IsNullOrEmpty(motDePasseVal.Text);
         }
 
         private void quitterBtn_Click(object sender, EventArgs e)
@@ -66,8 +69,8 @@ namespace SwissVisite.Forms
 
             if (!lesVisiteurs.Exists(v => $"{ v.Prenom.First() }{ v.Nom }".ToLower() == identifiant))
             {
-                identifiantVal.Text = string.Empty;
-                motDePasseVal.Text = string.Empty;
+                identifiantVal.Text = "";
+                motDePasseVal.Text = "";
 
                 erreurTextBox.Visible = true;
                 erreurTextBox.Text = "L'identifiant saisi n'est pas valide.";
@@ -77,7 +80,7 @@ namespace SwissVisite.Forms
 
             if (!lesVisiteurs.Exists(v => v.DateEmbauche.ToString("ddMMyyyy") == motDePasseVal.Text))
             {
-                motDePasseVal.Text = string.Empty;
+                motDePasseVal.Text = "";
 
                 erreurTextBox.Visible = true;
                 erreurTextBox.Text = "Le mot de passe saisi n'est pas valide.";
@@ -90,6 +93,16 @@ namespace SwissVisite.Forms
             DialogResult = DialogResult.OK;
 
             Close();
+        }
+
+        private void identifiantValEffaceBtn_Click(object sender, EventArgs e)
+        {
+            identifiantVal.Text = "";
+        }
+
+        private void motDePasseValEffaceBtn_Click(object sender, EventArgs e)
+        {
+            motDePasseVal.Text = "";
         }
     }
 }

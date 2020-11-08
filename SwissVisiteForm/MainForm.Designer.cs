@@ -379,6 +379,7 @@ namespace SwissVisite
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "GSB SwissVisite";
             this.menuPanel.ResumeLayout(false);
             this.titreFormEnfantPanel.ResumeLayout(false);
             this.titreFormEnfantPanel.PerformLayout();

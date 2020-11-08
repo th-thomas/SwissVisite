@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NouveauRapportForm));
             this.mainContainer = new System.Windows.Forms.SplitContainer();
             this.mainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.motifVal = new System.Windows.Forms.TextBox();
@@ -104,7 +105,7 @@
             this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.mainPanel.Controls.Add(this.motifVal, 3, 3);
             this.mainPanel.Controls.Add(this.bilanVal, 3, 5);
             this.mainPanel.Controls.Add(this.pratLabel, 1, 1);
@@ -141,7 +142,7 @@
             this.motifVal.Location = new System.Drawing.Point(200, 299);
             this.motifVal.Multiline = true;
             this.motifVal.Name = "motifVal";
-            this.motifVal.Size = new System.Drawing.Size(424, 97);
+            this.motifVal.Size = new System.Drawing.Size(422, 97);
             this.motifVal.TabIndex = 1;
             this.motifVal.Text = "Saisissez ici le motif de la visite...";
             this.motifVal.Enter += new System.EventHandler(this.motifVal_Enter);
@@ -158,7 +159,7 @@
             this.bilanVal.Multiline = true;
             this.bilanVal.Name = "bilanVal";
             this.mainPanel.SetRowSpan(this.bilanVal, 2);
-            this.bilanVal.Size = new System.Drawing.Size(424, 190);
+            this.bilanVal.Size = new System.Drawing.Size(422, 190);
             this.bilanVal.TabIndex = 2;
             this.bilanVal.Text = "Saisissez ici le bilan de la visite...";
             this.bilanVal.Enter += new System.EventHandler(this.bilanVal_Enter);
@@ -230,10 +231,10 @@
             this.pratDetailsBtn.IconChar = FontAwesome.Sharp.IconChar.IdCard;
             this.pratDetailsBtn.IconColor = System.Drawing.Color.DodgerBlue;
             this.pratDetailsBtn.IconSize = 40;
-            this.pratDetailsBtn.Location = new System.Drawing.Point(544, 105);
+            this.pratDetailsBtn.Location = new System.Drawing.Point(543, 105);
             this.pratDetailsBtn.Name = "pratDetailsBtn";
             this.pratDetailsBtn.Rotation = 0D;
-            this.pratDetailsBtn.Size = new System.Drawing.Size(80, 30);
+            this.pratDetailsBtn.Size = new System.Drawing.Size(79, 30);
             this.pratDetailsBtn.TabIndex = 20;
             this.pratDetailsBtn.TabStop = false;
             this.monToolTip.SetToolTip(this.pratDetailsBtn, "Afficher les informations détaillées sur le praticien sélectionné.");
@@ -251,7 +252,7 @@
             this.pratVal.FormattingEnabled = true;
             this.pratVal.Location = new System.Drawing.Point(200, 105);
             this.pratVal.Name = "pratVal";
-            this.pratVal.Size = new System.Drawing.Size(338, 30);
+            this.pratVal.Size = new System.Drawing.Size(337, 30);
             this.pratVal.TabIndex = 0;
             this.pratVal.Text = "{Praticien}";
             this.pratVal.SelectionChangeCommitted += new System.EventHandler(this.pratVal_SelectionChangeCommitted);
@@ -268,7 +269,7 @@
             this.dateVal.MaxDate = new System.DateTime(2222, 12, 31, 0, 0, 0, 0);
             this.dateVal.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.dateVal.Name = "dateVal";
-            this.dateVal.Size = new System.Drawing.Size(338, 31);
+            this.dateVal.Size = new System.Drawing.Size(337, 31);
             this.dateVal.TabIndex = 21;
             this.dateVal.TabStop = false;
             this.dateVal.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
@@ -280,9 +281,9 @@
             this.dateAujCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.dateAujCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dateAujCheckBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dateAujCheckBox.Location = new System.Drawing.Point(544, 202);
+            this.dateAujCheckBox.Location = new System.Drawing.Point(543, 202);
             this.dateAujCheckBox.Name = "dateAujCheckBox";
-            this.dateAujCheckBox.Size = new System.Drawing.Size(80, 26);
+            this.dateAujCheckBox.Size = new System.Drawing.Size(79, 26);
             this.dateAujCheckBox.TabIndex = 22;
             this.dateAujCheckBox.TabStop = false;
             this.dateAujCheckBox.Text = "Auj.";
@@ -596,9 +597,10 @@
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "NouveauRapportForm";
-            this.Text = "RapportsForm";
+            this.Text = "GSB SwissVisite - Nouveau compte-rendu";
             this.mainContainer.Panel1.ResumeLayout(false);
             this.mainContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mainContainer)).EndInit();

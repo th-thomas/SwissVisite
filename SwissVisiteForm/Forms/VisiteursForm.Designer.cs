@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisiteursForm));
             this.mainContainer = new System.Windows.Forms.SplitContainer();
             this.mainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.nomLabel = new System.Windows.Forms.Label();
@@ -368,9 +369,10 @@
             this.Controls.Add(this.mainContainer);
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "VisiteursForm";
-            this.Text = "VisiteursForm";
+            this.Text = "GSB SwissVisite - Annuaire des praticiens";
             this.mainContainer.Panel1.ResumeLayout(false);
             this.mainContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mainContainer)).EndInit();

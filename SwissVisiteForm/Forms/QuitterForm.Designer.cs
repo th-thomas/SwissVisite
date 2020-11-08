@@ -30,6 +30,7 @@ namespace SwissVisite.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuitterForm));
             this.mainPanel = new System.Windows.Forms.Panel();
             this.quitterNonBtn = new System.Windows.Forms.Button();
             this.quitterOuiBtn = new System.Windows.Forms.Button();
@@ -109,11 +110,12 @@ namespace SwissVisite.Forms
             this.Controls.Add(this.mainPanel);
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "QuitterForm";
             this.Padding = new System.Windows.Forms.Padding(1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "QuitterForm";
+            this.Text = "GSB SwissVisite - Quitter l\'application";
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.ResumeLayout(false);

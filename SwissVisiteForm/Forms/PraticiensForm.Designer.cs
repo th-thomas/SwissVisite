@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PraticiensForm));
             this.mainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.coeffNotLabel = new System.Windows.Forms.Label();
             this.villeLabel = new System.Windows.Forms.Label();
@@ -105,10 +106,10 @@
             this.coeffNotLabel.AutoSize = true;
             this.coeffNotLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.coeffNotLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.coeffNotLabel.Location = new System.Drawing.Point(43, 478);
+            this.coeffNotLabel.Location = new System.Drawing.Point(43, 466);
             this.coeffNotLabel.Name = "coeffNotLabel";
             this.coeffNotLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.coeffNotLabel.Size = new System.Drawing.Size(203, 80);
+            this.coeffNotLabel.Size = new System.Drawing.Size(154, 72);
             this.coeffNotLabel.TabIndex = 4;
             this.coeffNotLabel.Text = "Coeff. notoriété";
             // 
@@ -119,10 +120,10 @@
             this.villeLabel.AutoSize = true;
             this.villeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.villeLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.villeLabel.Location = new System.Drawing.Point(43, 398);
+            this.villeLabel.Location = new System.Drawing.Point(43, 394);
             this.villeLabel.Name = "villeLabel";
             this.villeLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.villeLabel.Size = new System.Drawing.Size(64, 80);
+            this.villeLabel.Size = new System.Drawing.Size(46, 72);
             this.villeLabel.TabIndex = 3;
             this.villeLabel.Text = "Ville";
             // 
@@ -133,10 +134,10 @@
             this.idLabel.AutoSize = true;
             this.idLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.idLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.idLabel.Location = new System.Drawing.Point(43, 78);
+            this.idLabel.Location = new System.Drawing.Point(43, 106);
             this.idLabel.Name = "idLabel";
             this.idLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.idLabel.Size = new System.Drawing.Size(109, 80);
+            this.idLabel.Size = new System.Drawing.Size(83, 72);
             this.idLabel.TabIndex = 0;
             this.idLabel.Text = "Numéro";
             // 
@@ -147,10 +148,10 @@
             this.nomLabel.AutoSize = true;
             this.nomLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nomLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.nomLabel.Location = new System.Drawing.Point(43, 158);
+            this.nomLabel.Location = new System.Drawing.Point(43, 178);
             this.nomLabel.Name = "nomLabel";
             this.nomLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.nomLabel.Size = new System.Drawing.Size(71, 80);
+            this.nomLabel.Size = new System.Drawing.Size(53, 72);
             this.nomLabel.TabIndex = 2;
             this.nomLabel.Text = "Nom";
             // 
@@ -161,10 +162,10 @@
             this.prenomLabel.AutoSize = true;
             this.prenomLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prenomLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.prenomLabel.Location = new System.Drawing.Point(43, 238);
+            this.prenomLabel.Location = new System.Drawing.Point(43, 250);
             this.prenomLabel.Name = "prenomLabel";
             this.prenomLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.prenomLabel.Size = new System.Drawing.Size(105, 80);
+            this.prenomLabel.Size = new System.Drawing.Size(80, 72);
             this.prenomLabel.TabIndex = 1;
             this.prenomLabel.Text = "Prénom";
             // 
@@ -173,10 +174,10 @@
             this.adresseLabel.AutoSize = true;
             this.adresseLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adresseLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.adresseLabel.Location = new System.Drawing.Point(43, 318);
+            this.adresseLabel.Location = new System.Drawing.Point(43, 322);
             this.adresseLabel.Name = "adresseLabel";
             this.adresseLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.adresseLabel.Size = new System.Drawing.Size(105, 80);
+            this.adresseLabel.Size = new System.Drawing.Size(82, 72);
             this.adresseLabel.TabIndex = 6;
             this.adresseLabel.Text = "Adresse";
             // 
@@ -187,10 +188,10 @@
             this.lieuExerciceLabel.AutoSize = true;
             this.lieuExerciceLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lieuExerciceLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lieuExerciceLabel.Location = new System.Drawing.Point(43, 558);
+            this.lieuExerciceLabel.Location = new System.Drawing.Point(43, 538);
             this.lieuExerciceLabel.Name = "lieuExerciceLabel";
             this.lieuExerciceLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.lieuExerciceLabel.Size = new System.Drawing.Size(194, 80);
+            this.lieuExerciceLabel.Size = new System.Drawing.Size(146, 72);
             this.lieuExerciceLabel.TabIndex = 5;
             this.lieuExerciceLabel.Text = "Lieu d\'exercice";
             // 
@@ -200,9 +201,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.idVal.AutoSize = true;
             this.idVal.ForeColor = System.Drawing.Color.Black;
-            this.idVal.Location = new System.Drawing.Point(272, 78);
+            this.idVal.Location = new System.Drawing.Point(223, 106);
             this.idVal.Name = "idVal";
-            this.idVal.Size = new System.Drawing.Size(124, 80);
+            this.idVal.Size = new System.Drawing.Size(95, 72);
             this.idVal.TabIndex = 7;
             this.idVal.Text = "{Numéro}";
             // 
@@ -213,9 +214,9 @@
             this.nomVal.AutoSize = true;
             this.nomVal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomVal.ForeColor = System.Drawing.Color.Black;
-            this.nomVal.Location = new System.Drawing.Point(272, 158);
+            this.nomVal.Location = new System.Drawing.Point(223, 178);
             this.nomVal.Name = "nomVal";
-            this.nomVal.Size = new System.Drawing.Size(84, 80);
+            this.nomVal.Size = new System.Drawing.Size(66, 72);
             this.nomVal.TabIndex = 8;
             this.nomVal.Text = "{Nom}";
             // 
@@ -225,9 +226,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.prenomVal.AutoSize = true;
             this.prenomVal.ForeColor = System.Drawing.Color.Black;
-            this.prenomVal.Location = new System.Drawing.Point(272, 238);
+            this.prenomVal.Location = new System.Drawing.Point(223, 250);
             this.prenomVal.Name = "prenomVal";
-            this.prenomVal.Size = new System.Drawing.Size(120, 80);
+            this.prenomVal.Size = new System.Drawing.Size(92, 72);
             this.prenomVal.TabIndex = 9;
             this.prenomVal.Text = "{Prénom}";
             // 
@@ -237,9 +238,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.adresseVal.AutoSize = true;
             this.adresseVal.ForeColor = System.Drawing.Color.Black;
-            this.adresseVal.Location = new System.Drawing.Point(272, 318);
+            this.adresseVal.Location = new System.Drawing.Point(223, 322);
             this.adresseVal.Name = "adresseVal";
-            this.adresseVal.Size = new System.Drawing.Size(120, 80);
+            this.adresseVal.Size = new System.Drawing.Size(94, 72);
             this.adresseVal.TabIndex = 10;
             this.adresseVal.Text = "{Adresse}";
             // 
@@ -249,9 +250,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.coeffNotVal.AutoSize = true;
             this.coeffNotVal.ForeColor = System.Drawing.Color.Black;
-            this.coeffNotVal.Location = new System.Drawing.Point(272, 478);
+            this.coeffNotVal.Location = new System.Drawing.Point(223, 466);
             this.coeffNotVal.Name = "coeffNotVal";
-            this.coeffNotVal.Size = new System.Drawing.Size(317, 80);
+            this.coeffNotVal.Size = new System.Drawing.Size(240, 72);
             this.coeffNotVal.TabIndex = 11;
             this.coeffNotVal.Text = "{Coefficient de notoriété}";
             // 
@@ -261,9 +262,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lieuExerciceVal.AutoSize = true;
             this.lieuExerciceVal.ForeColor = System.Drawing.Color.Black;
-            this.lieuExerciceVal.Location = new System.Drawing.Point(272, 558);
+            this.lieuExerciceVal.Location = new System.Drawing.Point(223, 538);
             this.lieuExerciceVal.Name = "lieuExerciceVal";
-            this.lieuExerciceVal.Size = new System.Drawing.Size(209, 80);
+            this.lieuExerciceVal.Size = new System.Drawing.Size(158, 72);
             this.lieuExerciceVal.TabIndex = 13;
             this.lieuExerciceVal.Text = "{Lieu d\'exercice}";
             // 
@@ -273,9 +274,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.villeVal.AutoSize = true;
             this.villeVal.ForeColor = System.Drawing.Color.Black;
-            this.villeVal.Location = new System.Drawing.Point(272, 398);
+            this.villeVal.Location = new System.Drawing.Point(223, 394);
             this.villeVal.Name = "villeVal";
-            this.villeVal.Size = new System.Drawing.Size(151, 80);
+            this.villeVal.Size = new System.Drawing.Size(113, 72);
             this.villeVal.TabIndex = 12;
             this.villeVal.Text = "{CP et Ville}";
             // 
@@ -409,9 +410,9 @@
             this.pratSelecComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pratSelecComboBox.ForeColor = System.Drawing.Color.Black;
             this.pratSelecComboBox.FormattingEnabled = true;
-            this.pratSelecComboBox.Location = new System.Drawing.Point(0, 28);
+            this.pratSelecComboBox.Location = new System.Drawing.Point(0, 26);
             this.pratSelecComboBox.Name = "pratSelecComboBox";
-            this.pratSelecComboBox.Size = new System.Drawing.Size(273, 31);
+            this.pratSelecComboBox.Size = new System.Drawing.Size(273, 29);
             this.pratSelecComboBox.TabIndex = 3;
             this.monToolTip.SetToolTip(this.pratSelecComboBox, "Sélectionner un praticien.");
             this.pratSelecComboBox.SelectionChangeCommitted += new System.EventHandler(this.pratSelecComboBox_SelectionChangeCommitted);
@@ -450,7 +451,7 @@
             this.pratSelecLabel.Location = new System.Drawing.Point(0, 0);
             this.pratSelecLabel.Name = "pratSelecLabel";
             this.pratSelecLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.pratSelecLabel.Size = new System.Drawing.Size(202, 28);
+            this.pratSelecLabel.Size = new System.Drawing.Size(166, 26);
             this.pratSelecLabel.TabIndex = 2;
             this.pratSelecLabel.Text = "Trouver un praticien";
             // 
@@ -462,7 +463,7 @@
             // 
             // PraticiensForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.CancelButton = this.retourBtn;
@@ -472,12 +473,13 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximizeBox = false;
             this.Name = "PraticiensForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Praticiens";
+            this.Text = "GSB SwissVisite - Annuaire des praticiens";
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.mainContainer.Panel1.ResumeLayout(false);

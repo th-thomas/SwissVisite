@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RapportsForm));
             this.mainContainer = new System.Windows.Forms.SplitContainer();
             this.mainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.pratVal = new System.Windows.Forms.Label();
@@ -99,7 +100,7 @@
             this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.mainPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.mainPanel.Controls.Add(this.pratVal, 3, 2);
             this.mainPanel.Controls.Add(this.dateVal, 3, 3);
             this.mainPanel.Controls.Add(this.motifVal, 3, 4);
@@ -134,7 +135,7 @@
             this.pratVal.ForeColor = System.Drawing.Color.Black;
             this.pratVal.Location = new System.Drawing.Point(200, 159);
             this.pratVal.Name = "pratVal";
-            this.pratVal.Size = new System.Drawing.Size(326, 97);
+            this.pratVal.Size = new System.Drawing.Size(325, 97);
             this.pratVal.TabIndex = 22;
             this.pratVal.Text = "{Praticien}";
             // 
@@ -146,7 +147,7 @@
             this.dateVal.ForeColor = System.Drawing.Color.Black;
             this.dateVal.Location = new System.Drawing.Point(200, 256);
             this.dateVal.Name = "dateVal";
-            this.dateVal.Size = new System.Drawing.Size(326, 97);
+            this.dateVal.Size = new System.Drawing.Size(325, 97);
             this.dateVal.TabIndex = 21;
             this.dateVal.Text = "{Date}";
             // 
@@ -161,7 +162,7 @@
             this.motifVal.Multiline = true;
             this.motifVal.Name = "motifVal";
             this.motifVal.ReadOnly = true;
-            this.motifVal.Size = new System.Drawing.Size(409, 99);
+            this.motifVal.Size = new System.Drawing.Size(407, 99);
             this.motifVal.TabIndex = 0;
             this.motifVal.TabStop = false;
             this.motifVal.Text = "{Motif}";
@@ -178,7 +179,7 @@
             this.bilanVal.Name = "bilanVal";
             this.bilanVal.ReadOnly = true;
             this.mainPanel.SetRowSpan(this.bilanVal, 2);
-            this.bilanVal.Size = new System.Drawing.Size(409, 190);
+            this.bilanVal.Size = new System.Drawing.Size(407, 190);
             this.bilanVal.TabIndex = 1;
             this.bilanVal.TabStop = false;
             this.bilanVal.Text = "{Bilan}";
@@ -257,7 +258,7 @@
             this.idVal.ForeColor = System.Drawing.Color.Black;
             this.idVal.Location = new System.Drawing.Point(200, 62);
             this.idVal.Name = "idVal";
-            this.idVal.Size = new System.Drawing.Size(409, 97);
+            this.idVal.Size = new System.Drawing.Size(407, 97);
             this.idVal.TabIndex = 8;
             this.idVal.Text = "{Numéro}";
             // 
@@ -274,7 +275,7 @@
             this.pratDetailsBtn.IconColor = System.Drawing.Color.DodgerBlue;
             this.pratDetailsBtn.IconSize = 40;
             this.pratDetailsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pratDetailsBtn.Location = new System.Drawing.Point(532, 162);
+            this.pratDetailsBtn.Location = new System.Drawing.Point(531, 162);
             this.pratDetailsBtn.Name = "pratDetailsBtn";
             this.pratDetailsBtn.Rotation = 0D;
             this.pratDetailsBtn.Size = new System.Drawing.Size(59, 30);
@@ -520,9 +521,10 @@
             this.Controls.Add(this.mainContainer);
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "RapportsForm";
-            this.Text = "NouveauRapportForm";
+            this.Text = "GSB SwissVisite - Affichage des comptes-rendus";
             this.mainContainer.Panel1.ResumeLayout(false);
             this.mainContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mainContainer)).EndInit();
