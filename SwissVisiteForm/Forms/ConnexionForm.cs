@@ -10,7 +10,7 @@ namespace SwissVisite.Forms
 {
     public partial class ConnexionForm : Form
     {
-        private List<VisiteurModel> lesVisiteurs;
+        private readonly List<VisiteurModel> lesVisiteurs;
 
         public ConnexionForm()
         {
