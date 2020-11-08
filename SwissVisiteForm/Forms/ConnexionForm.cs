@@ -1,4 +1,5 @@
-﻿using SwissVisiteLibrary;
+﻿using FontAwesome.Sharp;
+using SwissVisiteLibrary;
 using SwissVisiteLibrary.Models;
 using System;
 using System.Collections.Generic;
@@ -26,9 +27,18 @@ namespace SwissVisite.Forms
 
             identifiantVal.Enter += IdentifiantVal_Enter;
             identifiantVal.Leave += IdentifiantVal_Leave;
-
             motDePasseVal.Enter += MotDePasseVal_Enter;
             motDePasseVal.Leave += MotDePasseVal_Leave;
+        }
+
+        private void MotDePasseVal_Enter(object sender, EventArgs e)
+        {
+            motDePasseValEffaceBtn.Enabled = motDePasseValEffaceBtn.Visible = !string.IsNullOrEmpty(motDePasseVal.Text);
+        }
+
+        private void IdentifiantVal_Enter(object sender, EventArgs e)
+        {
+            identifiantValEffaceBtn.Enabled = identifiantValEffaceBtn.Visible = !string.IsNullOrEmpty(identifiantVal.Text);
         }
 
         private void MotDePasseVal_Leave(object sender, EventArgs e)
@@ -36,23 +46,22 @@ namespace SwissVisite.Forms
             motDePasseValEffaceBtn.Enabled = motDePasseValEffaceBtn.Visible = false;
         }
 
-        private void MotDePasseVal_Enter(object sender, EventArgs e)
-        {
-            motDePasseValEffaceBtn.Enabled = motDePasseValEffaceBtn.Visible = true;
-        }
-
         private void IdentifiantVal_Leave(object sender, EventArgs e)
         {
             identifiantValEffaceBtn.Enabled = identifiantValEffaceBtn.Visible = false;
         }
 
-        private void IdentifiantVal_Enter(object sender, EventArgs e)
-        {
-            identifiantValEffaceBtn.Enabled = identifiantValEffaceBtn.Visible = true;
-        }
-
         private void TextBox_TextChanged(object sender, EventArgs e)
-        {         
+        {
+            if (sender == identifiantVal)
+            {
+                identifiantValEffaceBtn.Enabled = identifiantValEffaceBtn.Visible = !string.IsNullOrEmpty(identifiantVal.Text);
+            }
+            else
+            {
+                motDePasseValEffaceBtn.Enabled = motDePasseValEffaceBtn.Visible = !string.IsNullOrEmpty(motDePasseVal.Text);
+            }
+
             connexionBtn.Enabled = !string.IsNullOrEmpty(identifiantVal.Text) && !string.IsNullOrEmpty(motDePasseVal.Text);
             erreurTextBox.Visible = false;
             erreurTextBox.Text = "";
@@ -121,11 +130,13 @@ namespace SwissVisite.Forms
         private void identifiantValEffaceBtn_Click(object sender, EventArgs e)
         {
             identifiantVal.Text = "";
+            identifiantVal.Focus();
         }
 
         private void motDePasseValEffaceBtn_Click(object sender, EventArgs e)
         {
             motDePasseVal.Text = "";
+            motDePasseVal.Focus();
         }
     }
 }
