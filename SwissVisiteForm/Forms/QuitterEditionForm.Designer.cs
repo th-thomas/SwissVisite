@@ -46,9 +46,9 @@
             this.mainPanel.Controls.Add(this.messageTitreLabel);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(1, 1);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(665, 371);
+            this.mainPanel.Size = new System.Drawing.Size(498, 301);
             this.mainPanel.TabIndex = 1;
             // 
             // messageTextBox
@@ -58,12 +58,11 @@
             this.messageTextBox.Enabled = false;
             this.messageTextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.messageTextBox.ForeColor = System.Drawing.Color.Black;
-            this.messageTextBox.Location = new System.Drawing.Point(111, 127);
-            this.messageTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.messageTextBox.Location = new System.Drawing.Point(28, 114);
             this.messageTextBox.Multiline = true;
             this.messageTextBox.Name = "messageTextBox";
             this.messageTextBox.ReadOnly = true;
-            this.messageTextBox.Size = new System.Drawing.Size(500, 59);
+            this.messageTextBox.Size = new System.Drawing.Size(375, 48);
             this.messageTextBox.TabIndex = 4;
             this.messageTextBox.TabStop = false;
             this.messageTextBox.Text = "Vous perdrez les données en cours de saisie.";
@@ -80,10 +79,9 @@
             this.quitterNonBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quitterNonBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quitterNonBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.quitterNonBtn.Location = new System.Drawing.Point(294, 228);
-            this.quitterNonBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.quitterNonBtn.Location = new System.Drawing.Point(185, 177);
             this.quitterNonBtn.Name = "quitterNonBtn";
-            this.quitterNonBtn.Size = new System.Drawing.Size(272, 68);
+            this.quitterNonBtn.Size = new System.Drawing.Size(274, 55);
             this.quitterNonBtn.TabIndex = 0;
             this.quitterNonBtn.Text = "Non (retour à l\'édition)";
             this.quitterNonBtn.UseVisualStyleBackColor = false;
@@ -100,10 +98,9 @@
             this.quitterOuiBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quitterOuiBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quitterOuiBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.quitterOuiBtn.Location = new System.Drawing.Point(98, 228);
-            this.quitterOuiBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.quitterOuiBtn.Location = new System.Drawing.Point(39, 177);
             this.quitterOuiBtn.Name = "quitterOuiBtn";
-            this.quitterOuiBtn.Size = new System.Drawing.Size(188, 68);
+            this.quitterOuiBtn.Size = new System.Drawing.Size(120, 55);
             this.quitterOuiBtn.TabIndex = 1;
             this.quitterOuiBtn.Text = "Oui";
             this.quitterOuiBtn.UseVisualStyleBackColor = false;
@@ -113,25 +110,23 @@
             this.messageTitreLabel.AutoSize = true;
             this.messageTitreLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.messageTitreLabel.ForeColor = System.Drawing.Color.Black;
-            this.messageTitreLabel.Location = new System.Drawing.Point(107, 74);
-            this.messageTitreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.messageTitreLabel.Location = new System.Drawing.Point(24, 68);
             this.messageTitreLabel.Name = "messageTitreLabel";
-            this.messageTitreLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.messageTitreLabel.Size = new System.Drawing.Size(451, 35);
+            this.messageTitreLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.messageTitreLabel.Size = new System.Drawing.Size(451, 33);
             this.messageTitreLabel.TabIndex = 0;
             this.messageTitreLabel.Text = "Confirmez-vous vouloir quitter le mode édition ?";
             // 
             // QuitterEditionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(667, 373);
+            this.ClientSize = new System.Drawing.Size(500, 303);
             this.Controls.Add(this.mainPanel);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "QuitterEditionForm";
             this.Padding = new System.Windows.Forms.Padding(1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
