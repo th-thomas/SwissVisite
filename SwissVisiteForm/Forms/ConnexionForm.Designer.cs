@@ -35,6 +35,8 @@
             this.minimMiniBtn = new FontAwesome.Sharp.IconButton();
             this.quitterMiniBtn = new FontAwesome.Sharp.IconButton();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.motDePasseValEffaceBtn = new FontAwesome.Sharp.IconButton();
+            this.identifiantValEffaceBtn = new FontAwesome.Sharp.IconButton();
             this.erreurTextBox = new System.Windows.Forms.Label();
             this.boutonsPanel = new System.Windows.Forms.Panel();
             this.connexionBtn = new System.Windows.Forms.Button();
@@ -45,8 +47,6 @@
             this.identifiantLabel = new System.Windows.Forms.Label();
             this.logoPicBox = new System.Windows.Forms.PictureBox();
             this.splitContainer = new System.Windows.Forms.SplitContainer();
-            this.identifiantValEffaceBtn = new FontAwesome.Sharp.IconButton();
-            this.motDePasseValEffaceBtn = new FontAwesome.Sharp.IconButton();
             this.monToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.bordureHautPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -66,9 +66,8 @@
             this.bordureHautPanel.Controls.Add(this.quitterMiniBtn);
             this.bordureHautPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.bordureHautPanel.Location = new System.Drawing.Point(1, 1);
-            this.bordureHautPanel.Margin = new System.Windows.Forms.Padding(4);
             this.bordureHautPanel.Name = "bordureHautPanel";
-            this.bordureHautPanel.Size = new System.Drawing.Size(798, 62);
+            this.bordureHautPanel.Size = new System.Drawing.Size(598, 50);
             this.bordureHautPanel.TabIndex = 6;
             // 
             // titreFormLabel
@@ -76,8 +75,7 @@
             this.titreFormLabel.AutoSize = true;
             this.titreFormLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titreFormLabel.ForeColor = System.Drawing.Color.White;
-            this.titreFormLabel.Location = new System.Drawing.Point(32, 20);
-            this.titreFormLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.titreFormLabel.Location = new System.Drawing.Point(24, 16);
             this.titreFormLabel.Name = "titreFormLabel";
             this.titreFormLabel.Size = new System.Drawing.Size(219, 19);
             this.titreFormLabel.TabIndex = 5;
@@ -96,11 +94,10 @@
             this.minimMiniBtn.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.minimMiniBtn.IconColor = System.Drawing.Color.White;
             this.minimMiniBtn.IconSize = 32;
-            this.minimMiniBtn.Location = new System.Drawing.Point(696, 12);
-            this.minimMiniBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.minimMiniBtn.Location = new System.Drawing.Point(522, 10);
             this.minimMiniBtn.Name = "minimMiniBtn";
             this.minimMiniBtn.Rotation = 0D;
-            this.minimMiniBtn.Size = new System.Drawing.Size(52, 42);
+            this.minimMiniBtn.Size = new System.Drawing.Size(39, 34);
             this.minimMiniBtn.TabIndex = 4;
             this.minimMiniBtn.TabStop = false;
             this.minimMiniBtn.UseVisualStyleBackColor = true;
@@ -119,11 +116,10 @@
             this.quitterMiniBtn.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.quitterMiniBtn.IconColor = System.Drawing.Color.White;
             this.quitterMiniBtn.IconSize = 32;
-            this.quitterMiniBtn.Location = new System.Drawing.Point(731, 4);
-            this.quitterMiniBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.quitterMiniBtn.Location = new System.Drawing.Point(548, 3);
             this.quitterMiniBtn.Name = "quitterMiniBtn";
             this.quitterMiniBtn.Rotation = 0D;
-            this.quitterMiniBtn.Size = new System.Drawing.Size(65, 42);
+            this.quitterMiniBtn.Size = new System.Drawing.Size(49, 34);
             this.quitterMiniBtn.TabIndex = 3;
             this.quitterMiniBtn.TabStop = false;
             this.quitterMiniBtn.UseVisualStyleBackColor = true;
@@ -142,20 +138,60 @@
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainPanel.ForeColor = System.Drawing.Color.Black;
-            this.mainPanel.Location = new System.Drawing.Point(20, 18);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.mainPanel.Location = new System.Drawing.Point(15, 15);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.mainPanel.Size = new System.Drawing.Size(488, 454);
+            this.mainPanel.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.mainPanel.Size = new System.Drawing.Size(366, 368);
             this.mainPanel.TabIndex = 11;
+            // 
+            // motDePasseValEffaceBtn
+            // 
+            this.motDePasseValEffaceBtn.BackColor = System.Drawing.Color.Transparent;
+            this.motDePasseValEffaceBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.motDePasseValEffaceBtn.FlatAppearance.BorderSize = 0;
+            this.motDePasseValEffaceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.motDePasseValEffaceBtn.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.motDePasseValEffaceBtn.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.motDePasseValEffaceBtn.IconColor = System.Drawing.Color.DimGray;
+            this.motDePasseValEffaceBtn.IconSize = 22;
+            this.motDePasseValEffaceBtn.Location = new System.Drawing.Point(299, 189);
+            this.motDePasseValEffaceBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.motDePasseValEffaceBtn.Name = "motDePasseValEffaceBtn";
+            this.motDePasseValEffaceBtn.Rotation = 0D;
+            this.motDePasseValEffaceBtn.Size = new System.Drawing.Size(22, 19);
+            this.motDePasseValEffaceBtn.TabIndex = 11;
+            this.monToolTip.SetToolTip(this.motDePasseValEffaceBtn, "Effacer le mot de passe saisi");
+            this.motDePasseValEffaceBtn.UseVisualStyleBackColor = false;
+            this.motDePasseValEffaceBtn.Visible = false;
+            this.motDePasseValEffaceBtn.Click += new System.EventHandler(this.motDePasseValEffaceBtn_Click);
+            // 
+            // identifiantValEffaceBtn
+            // 
+            this.identifiantValEffaceBtn.BackColor = System.Drawing.Color.Transparent;
+            this.identifiantValEffaceBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.identifiantValEffaceBtn.FlatAppearance.BorderSize = 0;
+            this.identifiantValEffaceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.identifiantValEffaceBtn.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.identifiantValEffaceBtn.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.identifiantValEffaceBtn.IconColor = System.Drawing.Color.DimGray;
+            this.identifiantValEffaceBtn.IconSize = 22;
+            this.identifiantValEffaceBtn.Location = new System.Drawing.Point(299, 105);
+            this.identifiantValEffaceBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.identifiantValEffaceBtn.Name = "identifiantValEffaceBtn";
+            this.identifiantValEffaceBtn.Rotation = 0D;
+            this.identifiantValEffaceBtn.Size = new System.Drawing.Size(22, 19);
+            this.identifiantValEffaceBtn.TabIndex = 10;
+            this.monToolTip.SetToolTip(this.identifiantValEffaceBtn, "Effacer l\'identifiant saisi");
+            this.identifiantValEffaceBtn.UseVisualStyleBackColor = false;
+            this.identifiantValEffaceBtn.Visible = false;
+            this.identifiantValEffaceBtn.Click += new System.EventHandler(this.identifiantValEffaceBtn_Click);
             // 
             // erreurTextBox
             // 
             this.erreurTextBox.AutoSize = true;
             this.erreurTextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.erreurTextBox.ForeColor = System.Drawing.Color.Red;
-            this.erreurTextBox.Location = new System.Drawing.Point(40, 25);
-            this.erreurTextBox.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.erreurTextBox.Location = new System.Drawing.Point(30, 20);
             this.erreurTextBox.Name = "erreurTextBox";
             this.erreurTextBox.Size = new System.Drawing.Size(62, 19);
             this.erreurTextBox.TabIndex = 9;
@@ -166,10 +202,9 @@
             // 
             this.boutonsPanel.Controls.Add(this.connexionBtn);
             this.boutonsPanel.Controls.Add(this.quitterBtn);
-            this.boutonsPanel.Location = new System.Drawing.Point(9, 315);
-            this.boutonsPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.boutonsPanel.Location = new System.Drawing.Point(7, 256);
             this.boutonsPanel.Name = "boutonsPanel";
-            this.boutonsPanel.Size = new System.Drawing.Size(469, 123);
+            this.boutonsPanel.Size = new System.Drawing.Size(352, 100);
             this.boutonsPanel.TabIndex = 8;
             // 
             // connexionBtn
@@ -182,10 +217,9 @@
             this.connexionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.connexionBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.connexionBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.connexionBtn.Location = new System.Drawing.Point(43, 28);
-            this.connexionBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.connexionBtn.Location = new System.Drawing.Point(32, 23);
             this.connexionBtn.Name = "connexionBtn";
-            this.connexionBtn.Size = new System.Drawing.Size(173, 68);
+            this.connexionBtn.Size = new System.Drawing.Size(130, 55);
             this.connexionBtn.TabIndex = 6;
             this.connexionBtn.Text = "Connexion";
             this.connexionBtn.UseVisualStyleBackColor = false;
@@ -200,10 +234,9 @@
             this.quitterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quitterBtn.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quitterBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.quitterBtn.Location = new System.Drawing.Point(253, 28);
-            this.quitterBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.quitterBtn.Location = new System.Drawing.Point(190, 23);
             this.quitterBtn.Name = "quitterBtn";
-            this.quitterBtn.Size = new System.Drawing.Size(173, 68);
+            this.quitterBtn.Size = new System.Drawing.Size(130, 55);
             this.quitterBtn.TabIndex = 7;
             this.quitterBtn.Text = "Annuler";
             this.quitterBtn.UseVisualStyleBackColor = false;
@@ -214,22 +247,20 @@
             this.motDePasseVal.BackColor = System.Drawing.Color.Gainsboro;
             this.motDePasseVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.motDePasseVal.ForeColor = System.Drawing.Color.Black;
-            this.motDePasseVal.Location = new System.Drawing.Point(45, 233);
-            this.motDePasseVal.Margin = new System.Windows.Forms.Padding(4);
+            this.motDePasseVal.Location = new System.Drawing.Point(34, 189);
             this.motDePasseVal.Name = "motDePasseVal";
             this.motDePasseVal.PasswordChar = '*';
-            this.motDePasseVal.Size = new System.Drawing.Size(347, 24);
+            this.motDePasseVal.Size = new System.Drawing.Size(260, 24);
             this.motDePasseVal.TabIndex = 5;
             // 
             // motDePasseLabel
             // 
             this.motDePasseLabel.AutoSize = true;
             this.motDePasseLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.motDePasseLabel.Location = new System.Drawing.Point(40, 162);
-            this.motDePasseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.motDePasseLabel.Location = new System.Drawing.Point(30, 132);
             this.motDePasseLabel.Name = "motDePasseLabel";
-            this.motDePasseLabel.Padding = new System.Windows.Forms.Padding(0, 25, 0, 12);
-            this.motDePasseLabel.Size = new System.Drawing.Size(148, 61);
+            this.motDePasseLabel.Padding = new System.Windows.Forms.Padding(0, 20, 0, 10);
+            this.motDePasseLabel.Size = new System.Drawing.Size(148, 54);
             this.motDePasseLabel.TabIndex = 3;
             this.motDePasseLabel.Text = "Mot de passe";
             // 
@@ -238,21 +269,19 @@
             this.identifiantVal.BackColor = System.Drawing.Color.Gainsboro;
             this.identifiantVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.identifiantVal.ForeColor = System.Drawing.Color.Black;
-            this.identifiantVal.Location = new System.Drawing.Point(45, 129);
-            this.identifiantVal.Margin = new System.Windows.Forms.Padding(4);
+            this.identifiantVal.Location = new System.Drawing.Point(34, 105);
             this.identifiantVal.Name = "identifiantVal";
-            this.identifiantVal.Size = new System.Drawing.Size(347, 24);
+            this.identifiantVal.Size = new System.Drawing.Size(260, 24);
             this.identifiantVal.TabIndex = 4;
             // 
             // identifiantLabel
             // 
             this.identifiantLabel.AutoSize = true;
             this.identifiantLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identifiantLabel.Location = new System.Drawing.Point(40, 71);
-            this.identifiantLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.identifiantLabel.Location = new System.Drawing.Point(30, 58);
             this.identifiantLabel.Name = "identifiantLabel";
-            this.identifiantLabel.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
-            this.identifiantLabel.Size = new System.Drawing.Size(110, 48);
+            this.identifiantLabel.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.identifiantLabel.Size = new System.Drawing.Size(110, 44);
             this.identifiantLabel.TabIndex = 2;
             this.identifiantLabel.Text = "Identifiant";
             // 
@@ -261,10 +290,9 @@
             this.logoPicBox.BackgroundImage = global::SwissVisiteForm.Properties.Resources.gsb_logo;
             this.logoPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logoPicBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logoPicBox.Location = new System.Drawing.Point(33, 18);
-            this.logoPicBox.Margin = new System.Windows.Forms.Padding(4);
+            this.logoPicBox.Location = new System.Drawing.Point(25, 15);
             this.logoPicBox.Name = "logoPicBox";
-            this.logoPicBox.Size = new System.Drawing.Size(212, 454);
+            this.logoPicBox.Size = new System.Drawing.Size(158, 368);
             this.logoPicBox.TabIndex = 0;
             this.logoPicBox.TabStop = false;
             // 
@@ -273,66 +301,22 @@
             this.splitContainer.BackColor = System.Drawing.Color.White;
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer.IsSplitterFixed = true;
-            this.splitContainer.Location = new System.Drawing.Point(1, 63);
-            this.splitContainer.Margin = new System.Windows.Forms.Padding(4);
+            this.splitContainer.Location = new System.Drawing.Point(1, 51);
             this.splitContainer.Name = "splitContainer";
             // 
             // splitContainer.Panel1
             // 
             this.splitContainer.Panel1.Controls.Add(this.logoPicBox);
-            this.splitContainer.Panel1.Padding = new System.Windows.Forms.Padding(33, 18, 20, 18);
+            this.splitContainer.Panel1.Padding = new System.Windows.Forms.Padding(25, 15, 15, 15);
             // 
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.mainPanel);
-            this.splitContainer.Panel2.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
-            this.splitContainer.Size = new System.Drawing.Size(798, 490);
-            this.splitContainer.SplitterDistance = 265;
-            this.splitContainer.SplitterWidth = 5;
+            this.splitContainer.Panel2.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.splitContainer.Size = new System.Drawing.Size(598, 398);
+            this.splitContainer.SplitterDistance = 198;
             this.splitContainer.TabIndex = 12;
             this.splitContainer.TabStop = false;
-            // 
-            // identifiantValEffaceBtn
-            // 
-            this.identifiantValEffaceBtn.BackColor = System.Drawing.Color.Transparent;
-            this.identifiantValEffaceBtn.Enabled = false;
-            this.identifiantValEffaceBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.identifiantValEffaceBtn.FlatAppearance.BorderSize = 0;
-            this.identifiantValEffaceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.identifiantValEffaceBtn.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.identifiantValEffaceBtn.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.identifiantValEffaceBtn.IconColor = System.Drawing.Color.DimGray;
-            this.identifiantValEffaceBtn.IconSize = 22;
-            this.identifiantValEffaceBtn.Location = new System.Drawing.Point(399, 129);
-            this.identifiantValEffaceBtn.Name = "identifiantValEffaceBtn";
-            this.identifiantValEffaceBtn.Rotation = 0D;
-            this.identifiantValEffaceBtn.Size = new System.Drawing.Size(29, 23);
-            this.identifiantValEffaceBtn.TabIndex = 10;
-            this.monToolTip.SetToolTip(this.identifiantValEffaceBtn, "Effacer l\'identifiant saisi");
-            this.identifiantValEffaceBtn.UseVisualStyleBackColor = false;
-            this.identifiantValEffaceBtn.Visible = false;
-            this.identifiantValEffaceBtn.Click += new System.EventHandler(this.identifiantValEffaceBtn_Click);
-            // 
-            // motDePasseValEffaceBtn
-            // 
-            this.motDePasseValEffaceBtn.BackColor = System.Drawing.Color.Transparent;
-            this.motDePasseValEffaceBtn.Enabled = false;
-            this.motDePasseValEffaceBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.motDePasseValEffaceBtn.FlatAppearance.BorderSize = 0;
-            this.motDePasseValEffaceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.motDePasseValEffaceBtn.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.motDePasseValEffaceBtn.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.motDePasseValEffaceBtn.IconColor = System.Drawing.Color.DimGray;
-            this.motDePasseValEffaceBtn.IconSize = 22;
-            this.motDePasseValEffaceBtn.Location = new System.Drawing.Point(399, 233);
-            this.motDePasseValEffaceBtn.Name = "motDePasseValEffaceBtn";
-            this.motDePasseValEffaceBtn.Rotation = 0D;
-            this.motDePasseValEffaceBtn.Size = new System.Drawing.Size(29, 23);
-            this.motDePasseValEffaceBtn.TabIndex = 11;
-            this.monToolTip.SetToolTip(this.motDePasseValEffaceBtn, "Effacer le mot de passe saisi");
-            this.motDePasseValEffaceBtn.UseVisualStyleBackColor = false;
-            this.motDePasseValEffaceBtn.Visible = false;
-            this.motDePasseValEffaceBtn.Click += new System.EventHandler(this.motDePasseValEffaceBtn_Click);
             // 
             // monToolTip
             // 
@@ -342,16 +326,15 @@
             // 
             // ConnexionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(800, 554);
+            this.ClientSize = new System.Drawing.Size(600, 450);
             this.Controls.Add(this.splitContainer);
             this.Controls.Add(this.bordureHautPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConnexionForm";
             this.Padding = new System.Windows.Forms.Padding(1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

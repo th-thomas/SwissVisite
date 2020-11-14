@@ -26,40 +26,30 @@ namespace SwissVisite.Forms
             motDePasseVal.TextChanged += TextBox_TextChanged;
 
             identifiantVal.Enter += IdentifiantVal_Enter;
-            identifiantVal.Leave += IdentifiantVal_Leave;
             motDePasseVal.Enter += MotDePasseVal_Enter;
-            motDePasseVal.Leave += MotDePasseVal_Leave;
         }
 
         private void MotDePasseVal_Enter(object sender, EventArgs e)
         {
-            motDePasseValEffaceBtn.Enabled = motDePasseValEffaceBtn.Visible = !string.IsNullOrEmpty(motDePasseVal.Text);
+            motDePasseValEffaceBtn.Visible = !string.IsNullOrEmpty(motDePasseVal.Text);
+            identifiantValEffaceBtn.Visible = false;
         }
 
         private void IdentifiantVal_Enter(object sender, EventArgs e)
         {
-            identifiantValEffaceBtn.Enabled = identifiantValEffaceBtn.Visible = !string.IsNullOrEmpty(identifiantVal.Text);
-        }
-
-        private void MotDePasseVal_Leave(object sender, EventArgs e)
-        {
-            motDePasseValEffaceBtn.Enabled = motDePasseValEffaceBtn.Visible = false;
-        }
-
-        private void IdentifiantVal_Leave(object sender, EventArgs e)
-        {
-            identifiantValEffaceBtn.Enabled = identifiantValEffaceBtn.Visible = false;
+            identifiantValEffaceBtn.Visible = !string.IsNullOrEmpty(identifiantVal.Text);
+            motDePasseValEffaceBtn.Visible = false;
         }
 
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
             if (sender == identifiantVal)
             {
-                identifiantValEffaceBtn.Enabled = identifiantValEffaceBtn.Visible = !string.IsNullOrEmpty(identifiantVal.Text);
+                identifiantValEffaceBtn.Visible = !string.IsNullOrEmpty(identifiantVal.Text);
             }
             else
             {
-                motDePasseValEffaceBtn.Enabled = motDePasseValEffaceBtn.Visible = !string.IsNullOrEmpty(motDePasseVal.Text);
+                motDePasseValEffaceBtn.Visible = !string.IsNullOrEmpty(motDePasseVal.Text);
             }
 
             connexionBtn.Enabled = !string.IsNullOrEmpty(identifiantVal.Text) && !string.IsNullOrEmpty(motDePasseVal.Text);
@@ -67,35 +57,21 @@ namespace SwissVisite.Forms
             erreurTextBox.Text = "";
         }
 
-        private void quitterBtn_Click(object sender, EventArgs e)
+        private void identifiantValEffaceBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            identifiantVal.Clear();
+            identifiantVal.Focus();
         }
 
-        private void quitterMiniBtn_Click(object sender, EventArgs e)
+        private void motDePasseValEffaceBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            motDePasseVal.Clear();
+            motDePasseVal.Focus();
         }
 
-        private void minimMiniBtn_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void ControlePouvantDeplacerFenetre_MouseDown(object sender, EventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(Handle, 0x112, 0xf012, 0);
-        }
 
         private void connexionBtn_Click(object sender, EventArgs e)
-        {            
+        {
             string identifiant = identifiantVal.Text;
             string motDePasse = motDePasseVal.Text;
 
@@ -127,16 +103,31 @@ namespace SwissVisite.Forms
             Close();
         }
 
-        private void identifiantValEffaceBtn_Click(object sender, EventArgs e)
+        private void quitterBtn_Click(object sender, EventArgs e)
         {
-            identifiantVal.Text = "";
-            identifiantVal.Focus();
+            Application.Exit();
         }
 
-        private void motDePasseValEffaceBtn_Click(object sender, EventArgs e)
+        private void quitterMiniBtn_Click(object sender, EventArgs e)
         {
-            motDePasseVal.Text = "";
-            motDePasseVal.Focus();
+            Application.Exit();
+        }
+
+        private void minimMiniBtn_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void ControlePouvantDeplacerFenetre_MouseDown(object sender, EventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(Handle, 0x112, 0xf012, 0);
         }
     }
 }
