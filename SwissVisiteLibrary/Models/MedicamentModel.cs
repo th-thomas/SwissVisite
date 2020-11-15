@@ -35,7 +35,7 @@
         /// <summary>
         /// Prix d'un échantillon du médicament
         /// </summary>
-        public decimal PrixEchantillon { get; set; }
+        public decimal? PrixEchantillon { get; set; }
 
         /// <summary>
         /// Famille du médicament

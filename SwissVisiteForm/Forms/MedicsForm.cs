@@ -78,7 +78,7 @@ namespace SwissVisite.Forms
                 composVal.Text = medicamentSelectionne.Composition;
                 effetsVal.Text = medicamentSelectionne.Effets;
                 contreIndicVal.Text = medicamentSelectionne.ContreIndications;
-                prixEchantVal.Text = medicamentSelectionne.PrixEchantillon.ToString("C");
+                prixEchantVal.Text = medicamentSelectionne.PrixEchantillon?.ToString("C") ?? "(Non renseigné)";
 
                 // Grise éventuellement un des boutons Suivant / Précédent
                 medicPrecBtn.Enabled = medicSelecComboBox.SelectedIndex != 0;
