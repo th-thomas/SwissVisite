@@ -103,11 +103,10 @@ CREATE PROCEDURE dbo.spRapportVisite_Create
     @Numero VARCHAR(255) OUTPUT
 AS
 BEGIN
-    DECLARE @NouveauNumero VARCHAR(255) = '';
-    SET @NouveauNumero = (SELECT 1 + MAX(CAST(RAP_NUM AS INTEGER)) FROM rapportvisite);
+    SET @Numero = (SELECT 1 + MAX(CAST(RAP_NUM AS INTEGER)) FROM rapportvisite);
     INSERT INTO rapportvisite (RAP_NUM, RAP_DATE, RAP_BILAN, RAP_MOTIF, PRA_NUM, VIS_MATRICULE)
-    VALUES (@NouveauNumero, @Date, @Bilan, @Motif, @NumeroPrat, @MatriculeVis);
-    SELECT @NouveauNumero;
+    VALUES (@Numero, @Date, @Bilan, @Motif, @NumeroPrat, @MatriculeVis);
+    SELECT @Numero;
 END
 GO
 
