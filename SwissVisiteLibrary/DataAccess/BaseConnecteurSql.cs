@@ -34,15 +34,14 @@ namespace SwissVisiteLibrary.DataAccess
             try
             {
                 connexion.Open();
+                connexion.Close();
             }
             catch (MySqlException)
             {
-                connexion.Close();
                 throw;
             }
             catch (SqlException)
             {
-                connexion.Close();
                 throw;
             }
         }
