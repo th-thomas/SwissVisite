@@ -34,7 +34,6 @@ namespace SwissVisiteLibrary.DataAccess
             try
             {
                 connexion.Open();
-                connexion.Close();
             }
             catch (MySqlException)
             {
@@ -43,6 +42,10 @@ namespace SwissVisiteLibrary.DataAccess
             catch (SqlException)
             {
                 throw;
+            }
+            finally
+            {
+                connexion.Close();
             }
         }
 
