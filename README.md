@@ -89,10 +89,12 @@ Informations sur les versions utilisées lors du développement de l'application
 ### 2.2. Création de la base de données et de son utilisateur
 Exemple pour une base de données MySQL / MariaDB en local :
 
-    CREATE DATABASE `swissvisite`;
-    CREATE USER `swissuser`@`localhost` IDENTIFIED BY 'swisspwd';
-    GRANT ALL ON `swissvisite`.* TO `swissuser`@`localhost`;  
-    
+```sql
+CREATE DATABASE `swissvisite`;
+CREATE USER `swissuser`@`localhost` IDENTIFIED BY 'swisspwd';
+GRANT ALL ON `swissvisite`.* TO `swissuser`@`localhost`;  
+```
+
 *Libre à vous de changer le nom d'utilisateur, son mot de passe et le nom d'hôte.  
 Il faudra alors modifier le fichier `app.config` du projet SwissVisiteForm. Cf. point 2.3.*  
 
@@ -115,19 +117,23 @@ puis de **modifier les valeurs associées aux clés `sourceDonnees` et `procedur
 
 *Exemple de section `appSettings` lorsque l'application utilise MySQL sans procédures stockées (configuration par défaut) :*  
 
-    <appSettings>
-	    <add key="proceduresStockees" value="non"/>
-	    <add key="sourceDonnees" value="mysql"/>
-    </appSettings>
+```xml
+<appSettings>
+    <add key="proceduresStockees" value="non"/>
+    <add key="sourceDonnees" value="mysql"/>
+</appSettings>
+```
 
 #### 2.3.2. Chaînes de connexion
 Assurez-vous enfin de personnaliser la **chaîne de connexion** (`mysql_swissvisite` pour MySQL ou `sqlserver_swissvisite` pour SQL Server) afin de correspondre aux identifiants et caractéristiques de votre base de données.  
 
 *Exemple - chaîne de connexion de MySQL (par défaut) :*
 
-    <add name="mysql_swissvisite"
+```xml
+<add	name="mysql_swissvisite"
 	connectionString="server=localhost;uid=swissuser;password=swisspwd;database=swissvisite"
 	providerName="MySqlConnector"/>
+```
 
 Ces chaînes se trouvent dans la section `connectionStrings` du même fichier `app.config`.    
 
@@ -139,12 +145,14 @@ Un visiteur médical enregistré dans la base de données peut s'authentifier da
   
 Exemple - les identifiants et mots de passe des 3 premiers visiteurs dans la base de données (syntaxe MySQL) :  
 
-    SELECT `VIS_PRENOM`, `VIS_NOM`, `VIS_DATEEMBAUCHE`,
-       '->' AS `donnent`,
-       LOWER(CONCAT(SUBSTR(`VIS_PRENOM`, 1, 1),`VIS_NOM`)) AS `Identifiant`,
-       DATE_FORMAT(`VIS_DATEEMBAUCHE`, '%d%m%Y') AS `Mot de passe`
-    FROM `visiteur`
-    LIMIT 0,3;
+```sql
+SELECT `VIS_PRENOM`, `VIS_NOM`, `VIS_DATEEMBAUCHE`,
+'->' AS `donnent`,
+LOWER(CONCAT(SUBSTR(`VIS_PRENOM`, 1, 1),`VIS_NOM`)) AS `Identifiant`,
+DATE_FORMAT(`VIS_DATEEMBAUCHE`, '%d%m%Y') AS `Mot de passe`
+FROM `visiteur`
+LIMIT 0,3;
+```
 
 | VIS_PRENOM | VIS_NOM | VIS_DATEEMBAUCHE | donnent | Identifiant | Mot de passe |
 |---|---|---|---|---|---|
