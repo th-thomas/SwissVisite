@@ -53,7 +53,7 @@ Cependant, l'ergonomie est perfectible et on voudrait centraliser les données d
 **Une nouvelle application, développée en C# avec le framework WinForms et reposant sur une base de données MySQL, a pour but de répondre à ces besoins d'amélioration.
 L'application supporte également SQL Server.**
 
-*Pour connaître l'intégralité du contexte et le cahier des charges, consulter la* [fiche des consignes](dossier_technique/consignes_GSB_PPE_3.pdf) *du PPE 3.*  
+*Pour connaître l'intégralité du contexte et le cahier des charges, consulter la* [fiche des consignes](dossier_technique/consignes_GSB_PPE_3.pdf) *du PPE.*  
 
 ### 1.2. Technologies et savoir-faire mis en oeuvre
 + Langage orienté objet : C#
