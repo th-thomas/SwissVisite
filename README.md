@@ -147,9 +147,9 @@ Exemple - les identifiants et mots de passe des 3 premiers visiteurs dans la bas
 
 ```sql
 SELECT `VIS_PRENOM`, `VIS_NOM`, `VIS_DATEEMBAUCHE`,
-'->' AS `donnent`,
-LOWER(CONCAT(SUBSTR(`VIS_PRENOM`, 1, 1),`VIS_NOM`)) AS `Identifiant`,
-DATE_FORMAT(`VIS_DATEEMBAUCHE`, '%d%m%Y') AS `Mot de passe`
+	'->' AS `donnent`,
+	LOWER(CONCAT(SUBSTR(`VIS_PRENOM`, 1, 1),`VIS_NOM`)) AS `Identifiant`,
+	DATE_FORMAT(`VIS_DATEEMBAUCHE`, '%d%m%Y') AS `Mot de passe`
 FROM `visiteur`
 LIMIT 0,3;
 ```
