@@ -17,7 +17,7 @@
            
 
 # SwissVisite - PPE 1 GSB
-## ***Une application client lourd pour la gestion des comptes-rendus des visiteurs GSB.***
+## ***Application client lourd pour la gestion des comptes-rendus des visiteurs GSB.***
   
 Projet personnel encadré réalisé par **Thibault THOMAS**,  
 étudiant en 2e année de **BTS Services informatiques aux organisations**.  
